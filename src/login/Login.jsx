@@ -46,7 +46,7 @@ function Login() {
           </div>
           <button type="submit">Login</button>
           <div className="links">
-            <Link to="/forgot-password">Forgot Password?</Link>
+            <Link to="/forgot">Forgot Password?</Link>
             <br />
             <Link to="/register">Register</Link>
           </div>

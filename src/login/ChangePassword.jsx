@@ -16,10 +16,10 @@ function ChangePassword() {
   };
 
   return (
-    <div className="container">
-      <div className="form-container">
+    <div className="password-container">
+      <div className="form1-container">
         <h2 className="heading">Change Password</h2>
-        <form onSubmit={handleSubmit} className="form">
+        <form onSubmit={handleSubmit} className="form1">
           <div className="form-field">
             <label className="label">New Password</label>
             <input
@@ -31,7 +31,7 @@ function ChangePassword() {
               required
             />
           </div>
-          <div className="form-field">
+          <div className="form1-field">
             <label className="label">Confirm Password</label>
             <input
               type="password"

@@ -1,123 +1,91 @@
-/* General Reset */
-* {
+/* General reset and styling */
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
   font-family: 'Arial', sans-serif;
   background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
-  color: #fff;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
-/* Container Styles */
+/* Center the container with fixed dimensions */
 .register-container {
-  background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
-  backdrop-filter: blur(10px); /* Blur effect */
-  border-radius: 15px;
+  width: 400px;
   padding: 30px;
-  width: 200%;
-  max-width: 400px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  animation: fadeIn 1s ease-in-out;
-  margin-right: 50px;
+  background-color: #ffffff; /* White background for form */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  border-radius: 10px; /* Rounded corners */
+  text-align: center; /* Center-align content */
 }
 
-/* Title */
+/* Title styling */
 .register-title {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #fff;
+  font-size: 28px;
   font-weight: bold;
+  color: #333; /* Neutral dark text */
+  margin-bottom: 20px;
 }
 
-/* Form Styles */
+/* Form layout */
 .register-form {
   display: flex;
   flex-direction: column;
+  gap: 15px; /* Space between form fields */
 }
 
-.form-field {
-  margin-bottom: 20px;
-  text-align: left;
-}
-
+/* Form field labels */
 .form-label {
+  font-size: 14px;
+  color: #555; /* Subtle text color */
+  text-align: left;
   display: block;
-  font-size: 0.9rem;
   margin-bottom: 5px;
-  color: #dcdcdc;
 }
 
+/* Input fields */
 .form-input {
   width: 100%;
   padding: 10px;
-  border: none;
+  font-size: 14px;
+  border: 1px solid #ccc; /* Neutral border */
   border-radius: 5px;
-  background: rgba(255, 255, 255, 0.8);
-  font-size: 1rem;
-  color: #333;
-  outline: none;
+  box-sizing: border-box;
   transition: all 0.3s ease;
 }
 
 .form-input:focus {
-  background: #fff;
-  border: 1px solid #6a11cb;
-  box-shadow: 0 0 5px rgba(106, 17, 203, 0.7);
+  border-color: #2575fc; /* Highlight input on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(37, 117, 252, 0.5); /* Blue shadow */
 }
 
-/* Button Styles */
+/* Button styling */
 .register-button {
-  padding: 10px 15px;
-  font-size: 1rem;
-  font-weight: bold;
-  background: #2575fc;
-  color: #fff;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* Attractive gradient */
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: bold;
   transition: all 0.3s ease;
 }
 
 .register-button:hover {
-  background: #6a11cb;
-  box-shadow: 0 4px 8px rgba(106, 17, 203, 0.6);
+  background: linear-gradient(to right, #2575fc, #6a11cb); /* Reverse gradient on hover */
+  transform: scale(1.05); /* Slight zoom effect */
 }
 
-/* Animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+.register-button:active {
+  transform: scale(1); /* Reset scale when clicked */
 }
 
-/* Responsive Design */
-@media (max-width: 480px) {
-  .register-container {
-    padding: 20px;
-  }
-
-  .register-title {
-    font-size: 1.5rem;
-  }
-
-  .form-input {
-    font-size: 0.9rem;
-  }
-
-  .register-button {
-    font-size: 0.9rem;
-  }
+/* Fixed height for consistency */
+.register-container {
+  height: auto; /* Adjusts based on content but remains centered */
+  min-height: 450px; /* Ensures consistent height */
 }

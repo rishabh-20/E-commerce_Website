@@ -1,0 +1,22 @@
+/* Custom styles for Swiper navigation arrows */
+.swiper-button-next, .swiper-button-prev {
+    color: #fff; /* Arrow color */
+    width: 10px;
+    height: 10px;
+  }
+  
+  /* Larger arrows for larger screens */
+  @media (min-width: 768px) {
+    .swiper-button-next, .swiper-button-prev {
+      width: 10px;
+      height: 10px;
+    }
+  }
+  
+  /* Even larger arrows for very large screens */
+  @media (min-width: 1024px) {
+    .swiper-button-next, .swiper-button-prev {
+      width: 80px;
+      height: 80px;
+    }
+  }
